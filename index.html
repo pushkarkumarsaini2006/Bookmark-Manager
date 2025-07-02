@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager - Pushkar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(60, 72, 88, 0.12);
+            padding: 32px 24px 24px 24px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4f46e5;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            color: #6366f1;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #c7d2fe;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            font-size: 1rem;
+            outline: none;
+            transition: border 0.2s;
+            box-sizing: border-box;
+        }
+
+        .search-box:focus {
+            border-color: #6366f1;
+        }
+
+        .bookmark-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .bookmark-list li {
+            margin-bottom: 12px;
+        }
+
+        .bookmark-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #374151;
+            background: #f1f5f9;
+            padding: 10px 16px;
+            border-radius: 8px;
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            font-size: 1.08rem;
+            box-shadow: 0 1px 4px rgba(60, 72, 88, 0.04);
+        }
+
+        .bookmark-link:hover {
+            background: #6366f1;
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(60, 72, 88, 0.10);
+        }
+
+        .icon {
+            margin-right: 12px;
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Bookmarks <span style="font-size:1.2em;">🔖</span></h1>
+        <input type="text" class="search-box" id="searchBox" placeholder="Search bookmarks..."
+            onkeyup="filterBookmarks()">
+
+        <h2>Primary Bookmarks</h2>
+        <ul class="bookmark-list" id="primaryBookmarks">
+            <li><a class="bookmark-link" target="_blank" href="https://github.com"><span
+                        class="icon">🐙</span>GitHub</a>
+            </li>
+            <li><a class="bookmark-link" target="_blank" href="https://stackoverflow.com"><span
+                        class="icon">💡</span>Stack Overflow</a>
+            </li>
+            <li><a class="bookmark-link" target="_blank" href="https://developer.mozilla.org"><span
+                        class="icon">🌐</span>MDN Web Docs</a>
+            </li>
+            <li><a class="bookmark-link" target="_blank" href="https://code.visualstudio.com"><span
+                        class="icon">💻</span>VS Code</a>
+            </li>
+            <li><a class="bookmark-link" target="_blank" href="https://www.google.com"><span
+                        class="icon">🔎</span>Google</a>
+            </li>
+        </ul>
+
+        <h2>Secondary Bookmarks</h2>
+        <ul class="bookmark-list" id="secondaryBookmarks">
+            <li><a class="bookmark-link" target="_blank" href="https://codepen.io"><span
+                        class="icon">✏️</span>CodePen</a>
+            </li>
+            <li><a class="bookmark-link" target="_blank" href="https://leetcode.com"><span
+                        class="icon">🧩</span>LeetCode</a>
+            </li>
+            <li><a class="bookmark-link" target="_blank" href="https://dev.to"><span
+                        class="icon">📝</span>Dev.to</a>
+            </li>
+            <li><a class="bookmark-link" target="_blank" href="https://www.freecodecamp.org"><span
+                        class="icon">🎓</span>freeCodeCamp</a>
+            </li>
+            <li><a class="bookmark-link" target="_blank" href="https://regex101.com"><span
+                        class="icon">🔤</span>Regex101</a>
+            </li>
+            <li><a class="bookmark-link" target="_blank" href="https://jsonformatter.org"><span
+                        class="icon">📋</span>JSON Formatter</a>
+            </li>
+            <li><a class="bookmark-link" target="_blank" href="https://docs.docker.com"><span
+                        class="icon">🐳</span>Docker Docs</a>
+            </li>
+            <li><a class="bookmark-link" target="_blank" href="https://www.postman.com"><span
+                        class="icon">📨</span>Postman</a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function filterBookmarks() {
+            const query = document.getElementById('searchBox').value.toLowerCase();
+            const lists = [document.getElementById('primaryBookmarks'), document.getElementById('secondaryBookmarks')];
+            lists.forEach(list => {
+                Array.from(list.getElementsByTagName('li')).forEach(li => {
+                    const text = li.textContent.toLowerCase();
+                    li.style.display = text.includes(query) ? '' : 'none';
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>
