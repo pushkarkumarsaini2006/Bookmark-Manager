@@ -2,7 +2,6 @@
 
 <div align="center">
 
-![Bookmark Manager](https://img.shields.io/badge/Bookmark-Manager-blueviolet?style=for-the-badge&logo=bookmark&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -53,9 +52,7 @@ Bookmark Manager is a modern, responsive web-based application that helps you or
 
 ## 🚀 Demo
 
-![Bookmark Manager Demo](https://via.placeholder.com/800x400/6366f1/ffffff?text=Bookmark+Manager+Demo)
-
-> **🌟 Live Demo**: [**View the Bookmark Manager in Action**](https://bookmark-manager-blue.vercel.app/) 
+> **🌟 Live Demo**: [**Bookmark Manager**](https://bookmark-manager-blue.vercel.app/) 
 > 
 > *Experience the full functionality with real-time search and beautiful animations!*
 
@@ -231,8 +228,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## �‍💻 Author
 
 **Pushkar Kumar Saini**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+- GitHub: [@pushkarkumarsaini2006](https://github.com/pushkarkumarsaini2006)
+- Email: pushkarkumarsaini2006@gmail.com
 
 ## 🙏 Acknowledgments
 
@@ -242,10 +239,10 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📊 Project Stats
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/Bookmark-Manager?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/Bookmark-Manager?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/Bookmark-Manager)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/yourusername/Bookmark-Manager)
+![GitHub stars](https://img.shields.io/github/stars/pushkarkumarsaini2006/Bookmark-Manager?style=social)
+![GitHub forks](https://img.shields.io/github/forks/pushkarkumarsaini2006/Bookmark-Manager?style=social)
+![GitHub issues](https://img.shields.io/github/issues/pushkarkumarsaini2006/Bookmark-Manager)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/pushkarkumarsaini2006/Bookmark-Manager)
 
 ---
 
@@ -253,6 +250,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **⭐ Star this repo if you find it helpful!**
 
-Made with ❤️ by [Pushkar Kumar Saini](https://github.com/yourusername)
+Made with ❤️ by [Pushkar Kumar Saini](https://github.com/pushkarkumarsaini2006)
 
 </div>
