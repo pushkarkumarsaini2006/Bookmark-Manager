@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal bookmark manager to organize and quickly access your favorite websites, development tools, and resources.">
     <title>Bookmark Manager - Pushkar</title>
     
     <!-- Favicon -->
@@ -93,6 +94,7 @@
 </head>
 
 <body>
+    <main>
     <div class="container">
         <h1>My Bookmarks <span style="font-size:1.2em;">🔖</span></h1>
         <input type="text" class="search-box" id="searchBox" placeholder="Search bookmarks..."
@@ -173,6 +175,7 @@
             </li>
         </ul>
     </div>
+    </main>
     <script>
         function filterBookmarks() {
             const query = document.getElementById('searchBox').value.toLowerCase();
